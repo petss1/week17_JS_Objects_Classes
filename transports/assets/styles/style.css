@@ -1,0 +1,41 @@
+.container{
+    width: 30vw;
+    margin: 3vw;
+    padding: 2vw;
+    border-radius: 10px;
+    background-color: #b4a9a9;
+}
+
+label{
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 20px; 
+}
+
+input, select{
+    padding: 7px;
+    border: 1px solid #4434b0;
+    border-radius: 7px;
+}
+
+button:disabled{
+    background-color: #888cc7;
+    font-size: 20px; 
+}
+
+button{
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #38a43d;
+    font-size: 21px; 
+}
+
+.error-message{
+    color: rgb(133, 39, 39);
+    font-size: 15px;
+}

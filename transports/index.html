@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/normalize.css">
+    <title>Registration form</title>
+</head>
+<body>
+    <form class="container">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" minlength="2" maxlength="20" pattern="[A-Za-z ]+" placeholder="Введите ваше имя" required>
+        <span class="error-message" id="nameError"></span>
+        <label for="email">Электронная почта:</label>
+        <input type="email" id="email" placeholder="Введите ваш email" required>
+        <span class="error-message" id="emailError"></span>
+        <label for="age">Возраст:</label>
+        <input type="number" id="age" min="1" max="130" placeholder="Введите ваш возраст" required>
+        <span class="error-message" id="ageError"></span>
+        <label>Пол:</label>
+        <input type="radio" name="gender" value="male" id="male"> Мужчина
+        <input type="radio" name="gender" value="female" id="female"> Женщина
+        <label for="profession">Профессия:</label>
+        <select id="profession" required>
+        <option value="" disabled selected>Выберите вашу профессию</option>
+        <option value="doctor">Врач</option>
+        <option value="programmer">Программист</option>
+        <option value="teacher">Учитель</option>
+        <option value="designer">Дизайнер</option>
+        <option value="engineer">Инженер</option>
+        <option value="seller">Продавец</option>
+        <option value="other">Другое</option>
+        </select>
+        <span class="error-message" id="professionError"></span>
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).*$" placeholder="Введите ваш пароль" required>
+        <span class="error-message" id="passwordError"></span>
+        <label for="consent">
+        <input type="checkbox" id="consent" required> Я согласен с обработкой персональных данных
+        </label>
+        <span class="error-message" id="consentError"></span>
+        <button type="submit" id="submitBtn" disabled>Отправить</button>
+    </form>
+    <script src="assets/script/index.js"></script>
+</body>
+</html>
